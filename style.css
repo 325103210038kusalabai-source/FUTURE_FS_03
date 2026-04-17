@@ -98,24 +98,47 @@ nav ul{
   border-radius:15px;
 }
 
-/* MENU */
-.menu{
-  padding:60px;
+/* MENU SECTION */
+.menu {
+    padding: 80px 60px;
+    background: #111;
+    text-align: center;
 }
 
-.menu span{
-  color:orange;
+.menu-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
-.menu-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
 }
 
-.menu-grid img{
-  width:100%;
-  border-radius:20px;
+/* MENU CARD */
+.menu-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid rgba(255,123,0,0.2);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    padding: 15px;
+}
+
+/* HOVER EFFECT */
+.menu-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: #ff7b00;
 }
 
 /* CONTACT */
