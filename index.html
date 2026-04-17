@@ -1,51 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tasty Bites</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TastyBites</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="hero">
-        <h1>Tasty Bites</h1>
-        <p>Experience Delicious Food Like Never Before 🍽️</p>
-        <button>Explore Menu</button>
-    </header>
+<nav>
+  <div class="logo">Tasty<span>Bites</span></div>
+  <ul>
+    <li onclick="scrollToSection('about')">About</li>
+    <li onclick="scrollToSection('menu')">Menu</li>
+    <li onclick="scrollToSection('story')">Story</li>
+    <li onclick="scrollToSection('contact')">Contact</li>
+  </ul>
+  <button class="btn">Reserve</button>
+</nav>
 
-    <section class="about">
-        <h2>About Us</h2>
-        <p>We serve high-quality food with fresh ingredients and amazing taste.</p>
-    </section>
-
-   <section class="menu">
-    <h2>Our Menu</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="https://source.unsplash.com/200x150/?biryani">
-            <p>Biryani</p>
-        </div>
-
-        <div class="card">
-            <img src="https://source.unsplash.com/200x150/?pizza">
-            <p>Pizza</p>
-        </div>
-
-        <div class="card">
-            <img src="https://source.unsplash.com/200x150/?burger">
-            <p>Burger</p>
-        </div>
-
-        <div class="card">
-            <img src="https://source.unsplash.com/200x150/?dosa">
-            <p>Dosa</p>
-        </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Where every <span>bite</span><br>tells a story.</h1>
+    <p>Hand-crafted dishes, fire-kissed flavors, and seasonal ingredients.</p>
+    <div class="hero-buttons">
+      <button class="btn">Explore Menu</button>
+      <button class="btn dark">Book Table</button>
     </div>
-   </section>
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>📞 9876543210</p>
-        <p>📍 Vijayawada</p>
-    </section>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <img src="https://images.unsplash.com/photo-1555992336-03a23c6a0c5d">
+</section>
+
+<!-- STORY -->
+<section id="story" class="story">
+  <h2>A kitchen that <span>obsesses</span> over flavor.</h2>
+  <p>
+    Tasty Bites began as a small kitchen in Vijayawada. We cook with passion and tradition.
+  </p>
+
+  <div class="cards">
+    <div class="card">10+ Years of Craft</div>
+    <div class="card">50+ Signature Dishes</div>
+    <div class="card">25K Diners Served</div>
+    <div class="card">4.9⭐ Rating</div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu">
+  <h2>Dishes built to be <span>remembered</span></h2>
+  <div class="menu-grid">
+    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+    <img src="https://images.unsplash.com/photo-1601924582975-7e0a8a6f3fcb">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <button class="btn">Reserve a Table</button>
+
+  <div class="contact-item">
+    <span>📍</span>
+    <div>
+      <h3>Find Us</h3>
+      <p>MG Road, Vijayawada</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <span>📞</span>
+    <div>
+      <h3>Call Us</h3>
+      <p>+91 9876543210</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <span>⏰</span>
+    <div>
+      <h3>Open Hours</h3>
+      <p>11am – 11pm</p>
+    </div>
+  </div>
+
+</section>
+
 <script src="script.js"></script>
 </body>
 </html>
