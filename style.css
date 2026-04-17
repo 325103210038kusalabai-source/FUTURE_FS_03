@@ -1,16 +1,18 @@
-body {
+body { 
     font-family: Arial;
     margin: 0;
     background: #111;
     color: white;
 }
 
-header {
+/* HERO SECTION */
+.hero {
     text-align: center;
-    padding: 30px;
-    background: #e63946;
+    padding: 120px 20px;
+    background: url("https://source.unsplash.com/1600x600/?restaurant") no-repeat center/cover;
 }
 
+/* NAVIGATION */
 nav {
     text-align: center;
     padding: 10px;
@@ -23,23 +25,40 @@ nav a {
     text-decoration: none;
 }
 
+/* SECTIONS */
 section {
     padding: 30px;
+    text-align: center;
 }
 
+/* HEADINGS */
 h2 {
     color: #e63946;
+}
+
+/* MENU CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .card {
     background: #1e293b;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    width: 150px;
+    width: 200px;
     transition: transform 0.4s, box-shadow 0.4s;
-    transform-style: preserve-3d;
 }
 
 .card:hover {
-    transform: rotateY(15deg) scale(1.1);
+    transform: scale(1.1) rotateY(10deg);
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
- }
+}
+
+/* IMAGE STYLE */
+img {
+    width: 100%;
+    border-radius: 10px;
 }
