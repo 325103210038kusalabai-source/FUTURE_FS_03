@@ -9,7 +9,79 @@ body{
   background:#0f0a07;
   color:white;
 }
+/* FIXED BACKGROUND */
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092")
+    no-repeat center/cover fixed;
+    position: relative;
+}
 
+/* MENU */
+.menu {
+    padding: 80px 40px;
+    background: #0f0f0f;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+.menu-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-card {
+    min-width: 200px;
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.menu-card p {
+    padding: 10px;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+/* ARROWS */
+.arrow {
+    background: #ff7b00;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 10px;
+}
 /* NAV */
 nav{
   display:flex;
