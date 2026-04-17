@@ -29,4 +29,17 @@ section {
 
 h2 {
     color: #e63946;
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+ }
 }
